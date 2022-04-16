@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.tiangou.helper</groupId>
+    <artifactId>shard-table-helper-boot-starter</artifactId>
+    <packaging>jar</packaging>
+    <version>${revision}</version>
+
+    <developers>
+        <developer>
+            <email>1272014869@qq.com</email>
+        </developer>
+    </developers>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <revision>0.0.1-release</revision>
+        <shard-table-helper.version>0.0.1-release</shard-table-helper.version>
+        <spring-boot-global.version>2.5.4</spring-boot-global.version>
+        <mybatis.version>3.5.6</mybatis.version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.tiangou.helper</groupId>
+            <artifactId>shard-table-helper</artifactId>
+            <version>${shard-table-helper.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot-global.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring-boot-global.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>

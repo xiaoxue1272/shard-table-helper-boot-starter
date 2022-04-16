@@ -1,0 +1,29 @@
+{
+  "groups": [
+    {
+      "name": "shard-table",
+      "type": "com.tiangou.helper.autoconfigure.ShardTableProperties",
+      "sourceType": "com.tiangou.helper.autoconfigure.ShardTableProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shard-table.enable",
+      "type": "java.lang.Boolean",
+      "description": "is enable shard-table-helper",
+      "sourceType": "com.tiangou.helper.autoconfigure.ShardTableProperties"
+    },
+    {
+      "name": "shard-table.placeholder",
+      "type": "java.lang.String",
+      "description": "shard table suffix name placeholder",
+      "sourceType": "com.tiangou.helper.autoconfigure.ShardTableProperties"
+    },
+    {
+      "name": "shard-table.replace-logic",
+      "type": "java.lang.String",
+      "description": "shard table suffix name replace logic (regex)",
+      "sourceType": "com.tiangou.helper.autoconfigure.ShardTableProperties."
+    }
+  ]
+}
